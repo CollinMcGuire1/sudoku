@@ -78,6 +78,20 @@ def eliminate(values, s, d):
 
         ### DISPLAY AS A 2-D GRID ###
 
+def display(values):
+    "Display these values as a 2-D grid."
+    if values is False:
+        print("No solution found.")
+        return
+    width = 1 + max(len(values[s]) for s in squares)
+    line = '+'.join(['-' * (width * 3)] * 3)
+    for r in rows:
+        print(''.join(values[r + c].center(width) + ('|' if c in '36' else '')
+                      for c in columns))
+        if r in 'CF': 
+            print(line)
+
+
 def solve(grid): return search(parse_grid(grid))
 
 def search(values):
