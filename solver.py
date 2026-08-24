@@ -34,7 +34,7 @@ def parse_grid(grid):
     for s, d in grid_values(grid).items():
         if d in digits and not assign(values, s, d):
             return False # fails if a digit cannot be assigned to a square
-        return values
+    return values
 
 def grid_values(grid):
     # Convert the grid into a dict of {square: char} with '0' or '.' for empty squares
