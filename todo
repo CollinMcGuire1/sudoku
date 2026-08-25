@@ -1,3 +1,4 @@
 add an input gui or some other more-intuitive way to place digits into a grid, rather than a long string of digits and dots
 add a benchmark function to see how long the program takes to do things
 create a grid-generator to make new grids. Must check that there are not multiple solutions for a given input, IE by making sure there are at least 8 unique given digits
+add -h arg for program
