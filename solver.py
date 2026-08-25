@@ -1,4 +1,5 @@
-
+### CURRENT USAGE: IN THE CLI, SUDOKU DIR, python3 -c "import solver; solver.display(solver.solve('INPUT STRING OF 81 #S'))"
+                                                                                            #ex  ('1...4.5..1.2.3....5.9'))"
 
 
 """
